@@ -1,0 +1,89 @@
+.limitarLetras {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-align: left;
+}
+
+.imagemDetalhe {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.imagemDetalhe_perdido {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+.div_form {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    margin-top: 0px;
+    margin-bottom: 120px;
+}
+
+
+
+
+/* .elementoInfiniteScroll {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+    padding: 10px;
+} */
+
+
+.elementoInfiniteScroll {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+.page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu a.active {
+    color: red;
+}
+
+.menu a.active {
+    color: black;
+    background-color: white;
+}
+
+.imgObjectoPerdido {
+    object-fit: cover;
+    width: 100%;
+    height: 330px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .responsive {
+        display: none;
+    }
+
+    .categorias {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mensagem_imagem_fundo {
+    background-image: url("/src/assets/img/img1.jpeg");
+    background-position: center;
+}
