@@ -145,7 +145,6 @@ export default function CriarContaEstudante() {
                                     errors={errors.palavra_passe}
                                 />
 
-                                <SelectTipoUtilizador />
 
                                 <SelectCurso
                                     onchange={handleChange("curso")}

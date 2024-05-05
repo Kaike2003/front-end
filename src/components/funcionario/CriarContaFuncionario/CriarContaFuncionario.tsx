@@ -160,11 +160,6 @@ export default function CriarContaFuncionario() {
                                     errors={errors.palavra_passe}
                                 />
 
-                                <SelectTipoUtilizador />
-
-                                <SelectCurso />
-
-                                <SelectClasse />
 
                             </div>
 

@@ -134,7 +134,6 @@ export default function CriarContaAdmin() {
                                     errors={errors.palavra_passe}
                                 />
 
-                                <Select />
                             </div>
 
                             <Button />
