@@ -20,11 +20,16 @@ export default function TelefonePerfil() {
     const [atualizar, setAtualizar] = useStoreAtualizar((state) => [state.atualizar, state.setAtualizar])
 
     const [token, setToken] = useState("")
+    const [id, setId] = useState("")
+
+
 
 
     useEffect(() => {
         const storageToken = localStorage.getItem("@Auth:token")
+        const storageId = localStorage.getItem("@Auth:__id")
 
+        setId(`${storageId}`)
         setToken(`${storageToken}`)
     }, [])
 
@@ -52,7 +57,7 @@ export default function TelefonePerfil() {
                         enableReinitialize
                         onSubmit={async values => {
 
-                            await api.put(`/${rota}/atualizar_perfil_telefone`,
+                            await api.put(`/${rota}/atualizar_perfil_telefone/${id}`,
                                 {
                                     telefone: Number(values.telefone),
                                 }

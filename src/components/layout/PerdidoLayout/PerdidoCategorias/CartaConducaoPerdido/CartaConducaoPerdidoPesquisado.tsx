@@ -28,9 +28,10 @@ function CartaConducaoPerdidoPesquisado() {
             }}
         >
             <InfiniteScroll
+                className='elementoInfiniteScroll'
                 dataLength={data.length}
                 next={fetchData}
-                style={{ display: 'flex', flexDirection: 'row', flexWrap: "wrap" }} //To put endMessage and loader to the top.
+                // style={{ display: 'flex', flexDirection: 'row', flexWrap: "wrap" }} //To put endMessage and loader to the top.
                 hasMore={true}
                 loader={<h4>...</h4>}
                 endMessage={<h4>Sem mais tarefas</h4>}
